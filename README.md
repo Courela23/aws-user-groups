@@ -10,6 +10,8 @@
 <h1>Project Overview</h1>
 The project involves AWS Identity and Access Management (IAM), a service designed for AWS customers to effectively oversee user access and permissions within their AWS accounts, along with the associated APIs and services. IAM enables the management of user profiles and security credentials, including API access keys, to facilitate user access to AWS resources. This project will guide you through the fundamental aspects of IAM. Specifically, we will delve into user and group administration and demonstrate how to grant access to specific resources by utilizing IAM-managed policies. Additionally, we will explore how to locate the login URL, the portal through which AWS users can access their accounts, all while considering practical, real-world use cases.
 
+Duplicate the IAM user sign-in link from the AWS console, launch an incognito window, and log in as user-1, user-2, and user-3 using the passwords provided on the lab page.
+
 <h2>Environments and Technologies Used</h2>
 
 - Microsoft Azure (Virtual Machines/Compute)
