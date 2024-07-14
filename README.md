@@ -1,4 +1,4 @@
-# aws-user-groups
+# Linux Command Lines
 <h1>Identity and Access Management (IAM) Deployed in the Cloud (AWS)
 
   ![Screen Shot 2023-10-25 at 4 38 51 PM](https://github.com/Courela23/aws-user-groups/assets/136120929/72bdc180-e2eb-4cb1-b260-64eb7779d305) </h1>
