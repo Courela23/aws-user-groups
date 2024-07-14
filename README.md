@@ -16,8 +16,8 @@
 
 - To ensure all systems are up to date, open the Terminal on the Ubuntu and type this command.
 
-  - sudo apt-get update && sudo apt-get upgrade -y
-  - sudo apt-get install curl apt-transport-https lsb-release gnupg2 -y
+  - sudo apt-get update
+  - sudo apt-get upgrade -y
 
 - Download and run the installation assiatance using this command
 
@@ -25,10 +25,8 @@
 
 - Once installations has been confirmed (in this case user name and password will be provided in the terminal output).
 - You can access the wazuh web interface with:
-  - https://<wazuh-dashboard-ip>
+![Screen Shot 2024-07-09 at 9 20 32 PM](https://github.com/user-attachments/assets/e2a648f6-950b-45f0-bb7e-a2bbca1cd664)
+  - (https: //<wazuh-dashboard-ip>)
 - Then log in with the username & password credentials provided in the terminal.
-  
-
-
-
-Once you've completed these steps, the specified users will be added to their respective groups in Amazon IAM, and they will inherit the permissions and policies associated with those groups.
+- When first accessing the Wazuh dashboard, the browser may display a warning about the certificate not being issued by a trusted authority. You can can either accept the certificate as an exception or configure the system to use a certificate from a trusted authority. Additionally, installing an agent will be covered in another project (The agen will be collecting security-related data and sends it to the Wazuh manager for analysis. It monitors the system for various types of activity, including log events, file changes, and configurations, and it helps in detecting intrusions, ensuring compliance, and identifying vulnerabilities.) 
+![image](https://github.com/user-attachments/assets/59ab7d27-b46a-41c1-83c7-bd6c13ead236)
