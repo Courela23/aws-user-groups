@@ -26,7 +26,7 @@
 - Once installations has been confirmed (in this case user name and password will be provided in the terminal output).
 - You can access the wazuh web interface with:
 ![Screen Shot 2024-07-09 at 9 20 32 PM](https://github.com/user-attachments/assets/e2a648f6-950b-45f0-bb7e-a2bbca1cd664)
-  - (https: //<wazuh-dashboard-ip>)
+  - ![Screen Shot 2024-07-14 at 7 28 17 PM](https://github.com/user-attachments/assets/1be23982-ced4-4b7b-a5cc-a5b48ea9e0d8)
 - Then log in with the username & password credentials provided in the terminal.
 - When first accessing the Wazuh dashboard, the browser may display a warning about the certificate not being issued by a trusted authority. You can can either accept the certificate as an exception or configure the system to use a certificate from a trusted authority.
 - Additionally, installing an agent will be covered in another project (The agen will be collecting security-related data and sends it to the Wazuh manager for analysis. It monitors the system for various types of activity, including log events, file changes, and configurations, and it helps in detecting intrusions, ensuring compliance, and identifying vulnerabilities.) 
