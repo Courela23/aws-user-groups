@@ -1,6 +1,6 @@
 # Utilizing Linux Command Lines to Install a Wazuh - SIEM
 
-<h2> What is Wazuh ? </h2> Wazuh is an open-source security monitoring platform that integrates multiple security functionalities to detect threats, monitor integrity, and ensure compliance with regulatory requirements. It offers intrusion detection, log data analysis, file integrity monitoring, vulnerability detection, and configuration assessment, helping organizations comply with standards like GDPR, HIPAA, and PCI DSS. Wazuh collects and processes security data from endpoints and network devices, generates real-time alerts based on customizable rules, and visualizes this information through its Kibana plugin.
+<h2> What is Sysmon ? </h2> Sysmon (System Monitor) is a Windows system service that logs detailed system activity, such as process creation and network connections. Organizations use Sysmon to detect and investigate security incidents by configuring rules to specify which events to log. These logs are then analyzed with SIEM tools to identify and respond to suspicious activities. Sysmon is installed on individual Windows endpoints, such as desktops, laptops, and servers, as part of an organization's security measures, either during the setup of new endpoints or when enhancing existing security infrastructure.
 <h2> Basic Prerequisites</h2>
   
 - Install Oracle VirtualBox Download and install VirtualBox from VirtualBox's official site.
