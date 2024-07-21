@@ -15,8 +15,8 @@
      - cd "C:\Program Files (x86)\ossec-agent"
    - Open ossec.conf file using:
      - notepad.exe ossec.conf
-- Add the necessary settings to the configuration file (notepad) to capture Sysmon event.
-
+- Add the necessary (Highlighted in BLUE) settings to the configuration file (notepad) to capture Sysmon event.
+![Screen Shot 2024-07-21 at 7 05 55 PM](https://github.com/user-attachments/assets/988959ed-56c9-49b1-abb9-b3c73a358531)
 - Using this prompt, restart wazuh
     - Restart-Service -Name wazuh
 
