@@ -3,12 +3,23 @@
 <h2> What is Sysmon ? </h2> Sysmon (System Monitor) is a Windows system service that logs detailed system activity, such as process creation and network connections. Organizations use Sysmon to detect and investigate security incidents by configuring rules to specify which events to log. These logs are then analyzed with SIEM tools to identify and respond to suspicious activities. Sysmon is installed on individual Windows endpoints, such as desktops, laptops, and servers, as part of an organization's security measures, either during the setup of new endpoints or when enhancing existing security infrastructure.
 <h2> Basic Prerequisites</h2>
   
-- Install Oracle VirtualBox Download and install VirtualBox from VirtualBox's official site.
-- Download Linux ISO Download the ISO file of your preferred Linux distribution from its official website.
-- Create a New Virtual Machine Open VirtualBox, click "New", and follow the wizard to name your VM, select Linux as the type, allocate memory (2 GB recommended), and create a virtual hard disk (20 GB or more).
-- Configure the Virtual Machine Go to VM "Settings": Adjust system settings, attach the Linux ISO under "Storage", and configure the network settings.
-- Install Linux and Complete Setup Start the VM, boot from the ISO, follow the installation steps for the Linux distribution, remove the ISO, and restart the VM.
-- Optional: Install VirtualBox Guest Additions for enhanced performance.
+- Install Wazuh SIEM/ADD an Agent to collect logs
+
+<h2> Installing Sysmon (windows 10)</h2>
+
+- Download Sysmon (https://learn.microsoft.com/en-us/sysinternals/downloads/sysmon)
+- Open Powershell and enter the following prompt.
+   - sysmon.exe -accepteula -i sysmonconfig.xml
+- Configure Wazuh to capture Sysmon Events.
+   - Open PowerShell as Administrator and navigate to the ossec-agent directory using this command:
+     - cd "C:\Program Files (x86)\ossec-agent"
+   - Open ossec.conf file using:
+     - notepad.exe ossec.conf
+- Add the necessary settings to the configuration file (notepad) to capture Sysmon event.
+
+- Using this prompt, restart wazuh
+    - Restart-Service -Name wazuh
+
 
   ![Screen Shot 2024-07-07 at 8 26 52 PM](https://github.com/user-attachments/assets/b8ba8ae1-e3c3-4c17-ac50-48798c26d190)
 
