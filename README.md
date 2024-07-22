@@ -3,9 +3,9 @@
 <h2> What is Sysmon ? </h2> Sysmon (System Monitor) is a Windows system service that logs detailed system activity, such as process creation and network connections. Organizations use Sysmon to detect and investigate security incidents by configuring rules to specify which events to log. These logs are then analyzed with SIEM tools to identify and respond to suspicious activities. Sysmon is installed on individual Windows endpoints, such as desktops, laptops, and servers, as part of an organization's security measures, either during the setup of new endpoints or when enhancing existing security infrastructure.
 <h2> Overview</h2>
 
-  1. Install Sysmon
-  2. Run an Encoded PowerShell Scripts (Check the Wazuh-SIEM to see if an alert was generated)
-  3. Modify RunOnce Registry Key (Check the Wazuh-SIEM to see if an alert was generated)
+  1. Install Sysmon.
+  2. Run an Encoded PowerShell Scripts (Check the Wazuh-SIEM to see if an alert was generated).
+  3. Modify RunOnce Registry Key (Check the Wazuh-SIEM to see if an alert was generated).
 
 <h2> Installing Sysmon (windows 10)</h2>
 
@@ -19,7 +19,7 @@
      - notepad.exe ossec.conf
 - Add the necessary (Highlighted in BLUE) settings to the configuration file (notepad) to capture Sysmon event.
 ![Screen Shot 2024-07-21 at 7 05 55 PM](https://github.com/user-attachments/assets/988959ed-56c9-49b1-abb9-b3c73a358531)
-- Using this prompt, to restart wazuh
+- Using this prompt, to restart Wazuh.
     - Restart-Service -Name wazuh
 
 <h2> Sysmon Rule # 1 (Encoded PowerShell Scripts)</h2>
@@ -68,8 +68,13 @@ Attackers can add entries to the registry to ensure their malicious code runs au
    2. Now we can edit the Windows Registry (Run it as an Admin) to open the calculator app upon bootup.
         - Navigate to the Run Key:
           - HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run.
+          - Right-click on run\New\string Value\
+          - Name it "Claculator"
+          - Right-click on the name and select modify.
+          - For value data type "calc.exe" and click "ok"
 
-![Screen Shot 2024-07-20 at 11 16 36 AM](https://github.com/user-attachments/assets/faa7aac7-8066-4d82-bdd5-d695b76c9c34)
+![Screen Shot 2024-07-21 at 9 38 07 PM](https://github.com/user-attachments/assets/1e253a52-af9c-4796-94e8-2ed58983f67a)
+
 
   3. Close the Registry Editor. The changes will take effect the next time you restart your computer.
 ![Screen Shot 2024-07-20 at 12 36 06 PM](https://github.com/user-attachments/assets/58c56c09-cc33-47f0-9414-27b9dc7674dc)
