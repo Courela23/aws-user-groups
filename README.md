@@ -71,6 +71,8 @@ Attackers can add entries to the registry to ensure their malicious code runs au
 
 ![Screen Shot 2024-07-20 at 11 16 36 AM](https://github.com/user-attachments/assets/faa7aac7-8066-4d82-bdd5-d695b76c9c34)
 
-  3. You can restart the machine again to confirm.
+  3. Close the Registry Editor. The changes will take effect the next time you restart your computer.
 ![Screen Shot 2024-07-20 at 12 36 06 PM](https://github.com/user-attachments/assets/58c56c09-cc33-47f0-9414-27b9dc7674dc)
+  
+  4. Check the Wazuh SIEM to see the triggered alert. 
 ![Screen Shot 2024-07-20 at 12 19 48 PM](https://github.com/user-attachments/assets/75f4cf50-6713-415a-ac75-e862be6faf37)
