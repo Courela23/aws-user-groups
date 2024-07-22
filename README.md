@@ -30,6 +30,8 @@
 <h2> Why do attackers use Encoded scripts? </h2> Attackers use encoded scripts to evade detection by disguising the true intent of their commands to bypass signature-based systems. Leveraging PowerShell's capability to run Base64 encoded commands, they can execute malicious code stealthily without raising alerts. 
 
 In this lab, we will be using Base64 to encode the get process command. The get process command shows all the programs/ processes running on your machine. 
+ <h2>STEPS </h2> 
+  
   1. Add a New Rules File in Wazuh GUI:
      - Navigate to Wazuh GUI and select Management -> Rules -> Manage Rule Files -> Add New Rules File.
   2. Create this Sysmon rule in Wazuh.
@@ -49,16 +51,25 @@ In this lab, we will be using Base64 to encode the get process command. The get 
 
 <h2> Sysmon Rule # 2 (Windows Registry RunOnce Key Modification)</h2>
 
+![Screen Shot 2024-07-21 at 8 46 49 PM](https://github.com/user-attachments/assets/2a318bee-e6ad-4d7a-913d-2b5d5c1424dd)
 <h2> What is the Windows Registry? </h2> The Windows Registry is a hierarchical database that stores configuration settings and options for the Windows operating system and installed applications. It contains information, settings, and options related to hardware, software, users, and the system.
 
+![Screen Shot 2024-07-19 at 10 00 59 PM](https://github.com/user-attachments/assets/d1de90a7-8cfb-4a80-bbab-53356b1d1c43)
 <h2> How would an attacker utilize it? </h2>
-attackers can add entries to the registry to ensure their malicious code runs automatically each time the system starts or a user logs in. Common keys used for persistence include Run, RunOnce, and Startup.
+Attackers can add entries to the registry to ensure their malicious code runs automatically each time the system starts or a user logs in. Common keys used for persistence include Run, RunOnce, and Startup.
 
-- Once installations has been confirmed (in this case user name and password will be provided in the terminal output).
-- You can access the wazuh web interface with:
-![Screen Shot 2024-07-09 at 9 20 32 PM](https://github.com/user-attachments/assets/e2a648f6-950b-45f0-bb7e-a2bbca1cd664)
-  - ![Screen Shot 2024-07-14 at 7 28 17 PM](https://github.com/user-attachments/assets/1be23982-ced4-4b7b-a5cc-a5b48ea9e0d8)
-- Then log in with the username & password credentials provided in the terminal.
-- When first accessing the Wazuh dashboard, the browser may display a warning about the certificate not being issued by a trusted authority. You can can either accept the certificate as an exception or configure the system to use a certificate from a trusted authority.
-- Additionally, installing an agent will be covered in another project (The agen will be collecting security-related data and sends it to the Wazuh manager for analysis. It monitors the system for various types of activity, including log events, file changes, and configurations, and it helps in detecting intrusions, ensuring compliance, and identifying vulnerabilities.) 
-![image](https://github.com/user-attachments/assets/59ab7d27-b46a-41c1-83c7-bd6c13ead236)
+ In this lab, we will be editing the Run/RunOnce key to run the calculator app every time the computer boots up. 
+ <h2>STEPS</h2> 
+   1. First we create the sysmon rule. 
+   
+  ![Screen Shot 2024-07-21 at 9 02 17 PM](https://github.com/user-attachments/assets/aab6b213-ec0d-493a-ae64-ac2247f06b17)
+   
+   
+   2. Now we can edit the Windows Registry to open the calculator app upon bootup.
+        - Navigate to the Run Key:
+          - HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run.
+![Screen Shot 2024-07-20 at 11 16 36 AM](https://github.com/user-attachments/assets/faa7aac7-8066-4d82-bdd5-d695b76c9c34)
+
+  3. You can restart the machine again to confirm.
+![Screen Shot 2024-07-20 at 12 36 06 PM](https://github.com/user-attachments/assets/58c56c09-cc33-47f0-9414-27b9dc7674dc)
+![Screen Shot 2024-07-20 at 12 19 48 PM](https://github.com/user-attachments/assets/75f4cf50-6713-415a-ac75-e862be6faf37)
