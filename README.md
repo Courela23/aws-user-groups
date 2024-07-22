@@ -19,7 +19,7 @@
      - notepad.exe ossec.conf
 - Add the necessary (Highlighted in BLUE) settings to the configuration file (notepad) to capture Sysmon event.
 ![Screen Shot 2024-07-21 at 7 05 55 PM](https://github.com/user-attachments/assets/988959ed-56c9-49b1-abb9-b3c73a358531)
-- Using this prompt, restart wazuh
+- Using this prompt, to restart wazuh
     - Restart-Service -Name wazuh
 
 <h2> Sysmon Rule # 1 (Encoded PowerShell Scripts)</h2>
