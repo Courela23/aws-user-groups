@@ -65,7 +65,7 @@ Attackers can add entries to the registry to ensure their malicious code runs au
 ![Screen Shot 2024-07-21 at 9 02 17 PM](https://github.com/user-attachments/assets/aab6b213-ec0d-493a-ae64-ac2247f06b17)
    
    
-   2. Now we can edit the Windows Registry to open the calculator app upon bootup.
+   2. Now we can edit the Windows Registry (Run it as an Admin) to open the calculator app upon bootup.
         - Navigate to the Run Key:
           - HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run.
 
