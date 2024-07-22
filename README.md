@@ -62,12 +62,13 @@ Attackers can add entries to the registry to ensure their malicious code runs au
  <h2>STEPS</h2> 
    1. First we create the sysmon rule. 
    
-  ![Screen Shot 2024-07-21 at 9 02 17 PM](https://github.com/user-attachments/assets/aab6b213-ec0d-493a-ae64-ac2247f06b17)
+![Screen Shot 2024-07-21 at 9 02 17 PM](https://github.com/user-attachments/assets/aab6b213-ec0d-493a-ae64-ac2247f06b17)
    
    
    2. Now we can edit the Windows Registry to open the calculator app upon bootup.
         - Navigate to the Run Key:
           - HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run.
+
 ![Screen Shot 2024-07-20 at 11 16 36 AM](https://github.com/user-attachments/assets/faa7aac7-8066-4d82-bdd5-d695b76c9c34)
 
   3. You can restart the machine again to confirm.
