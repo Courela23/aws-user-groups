@@ -1,53 +1,53 @@
-# Network Security Analysis Project
-
-<h2> What is Wireshark? </h2> Wireshark is a powerful and widely used network protocol analyzer essential for network administrators, security professionals, and developers. It captures and displays network traffic in a detailed, human-readable format, supporting deep inspection of hundreds of protocols. Wireshark helps diagnose connectivity issues, identify security threats, and troubleshoot network problems by providing detailed packet information and robust filtering options. It runs on multiple operating systems and is backed by extensive documentation and community support. Whether for network troubleshooting, security analysis, or protocol development, Wireshark is an indispensable tool for gaining deep insights into network operations.
-<h2> Overview</h2>
-
-
-- In this project, I will analyze a . PCAP file containing network traffic from a host that made several suspicious requests to various domains on the internet.
-   - https://www.malware-traffic-analysis.net/2021/01/05/index.html (Go to this link and download the 2021-01-05-PurpleFox-EK-and-post-infection-traffic.pcap.zip)
-
-![image](https://github.com/user-attachments/assets/3c1eb358-4652-46ec-9a2f-7360e3928ab1)
-   
-   - The file is password protected, Therefore use the password credentials provided on the website to unzip the file. Then Open it with Wireshark.
-
-- Step 1: Open the.PCAP file open answer the following questions.
-    - Question 1: What is the total elapsed time of this PCAP (Hint: Statistics → File Properties)
-      - The time elapsed for this PCAP was 00:21:23.
-
-![image](https://github.com/user-attachments/assets/d822e776-4f35-4389-b8b1-5845db167209)
-    
-- Question 2: What is the Total number of Packets (Hint: Statistics → File Properties)
-      - The total number of packets captured was 10, 389. 
-    - Question 3: What destination IP addresses have the largest Bytes, list the top 5 (Hint: Statistics → Conversations → IPv4)
-      - The top 5 IP addresses with the largest Bytes were.
-        - 185.178.208.171 (5MB)
-        - 60.12.109.73 (2MB)
-        - 58.64.128.29 (1MB)
-        - 172.64.166.10 (1MB)
-        - 59.45.79.40 (108kB)
- 
-  ![image](https://github.com/user-attachments/assets/60db91c5-46ad-4da2-ab6d-c8998ff839de)
-
-
-- Step 2: Search for GET Requests made, and answer the following questions.
-   - Question 1: What is the total number of GET Requests made?
-      - There were 10 get requests made.
-   - Question 2: What is the Source IP that made these GET requests?
-      - The source IP address for the Get Requests was: 10.1.5.101
- - Step 3: Right-click on the first GET request and select Follow Stream → HTTP
-   - Question 1: What is the GET request that was made?
-      - The GET request made was    /up.hph?key+ HTTP/1.1
-
-![image](https://github.com/user-attachments/assets/a32b8d09-6ca0-4e09-a0bf-5dfd2ef5f046)
+# Utilizing Linux Command Lines to Install a Wazuh SIEM
+<h2> Basic Prerequisites</h2>
   
-   - Question 2: What is the name of the website?
-      - The name of the website is .githack.cyou
-   - Question 3: Use OSINT to get the threat reputation of the domain, whats the score? 
-      - According to OSSINT, the domain is malicious, its been flagged by several vendors as well.
+- Install Oracle VirtualBox Download and install VirtualBox from VirtualBox's official site.
+- Download Linux ISO Download the ISO file of your preferred Linux distribution from its official website.
+- Create a New Virtual Machine Open VirtualBox, click "New", and follow the wizard to name your VM, select Linux as the type, allocate memory (2 GB recommended), and create a virtual hard disk (20 GB or more).
+- Configure the Virtual Machine Go to VM "Settings": Adjust system settings, attach the Linux ISO under "Storage", and configure the network settings.
+- Install Linux and Complete Setup Start the VM, boot from the ISO, follow the installation steps for the Linux distribution, remove the ISO, and restart the VM.
+- Optional: Install VirtualBox Guest Additions for enhanced performance.
 
-![image](https://github.com/user-attachments/assets/1e274b9b-1513-4225-adae-9560d2122b3a)
-   
-   - Question 4: The Server responded to the GET request with a 200 OK what does this mean?
-      - The server responded to the GET request with a 200 OK, which means the request was successful / Accepted.
-  
+  ![Screen Shot 2023-10-25 at 4 38 51 PM](https://github.com/Courela23/aws-user-groups/assets/136120929/72bdc180-e2eb-4cb1-b260-64eb7779d305) </h1>
+
+
+
+<h2>Environments and Technologies Used</h2>
+  -A Cloud Guru.
+<h1>Project Overview</h1>
+The project involves AWS Identity and Access Management (IAM), a service designed for AWS customers to effectively oversee user access and permissions within their AWS accounts, along with the associated APIs and services. IAM enables the management of user profiles and security credentials, including API access keys, to facilitate user access to AWS resources. This project will guide you through the fundamental aspects of IAM. Specifically, we will delve into user and group administration and demonstrate how to grant access to specific resources by utilizing IAM-managed policies. Additionally, we will explore how to locate the login URL, the portal through which AWS users can access their accounts, all while considering practical, real-world use cases.
+
+Duplicate the IAM user sign-in link from the AWS console, launch an incognito window, and log in as user-1, user-2, and user-3 using the passwords provided on the lab page.
+
+<h2>Environments and Technologies Used</h2>
+
+- Microsoft Azure (Virtual Machines/Compute)
+- Remote Desktop
+- Active Directory Domain Services
+
+<h2>Operating Systems Used </h2>
+- Windows 10 (21H2)
+
+<h2>High-Level Deployment and Configuration Steps</h2>
+
+- Sign in to the AWS Management Console:
+- Access the IAM Dashboard:
+- Create the Groups (if not already created)
+- Add Users to Groups
+
+<h2>Deployment and Configuration Steps</h2>
+
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Sign in to the AWS Management Console:
+    Log in to your AWS account using your credentials.
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+ Access the IAM Dashboard:
