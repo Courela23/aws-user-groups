@@ -1,12 +1,5 @@
-# Utilizing Linux Command Lines to Install a Wazuh SIEM
-<h2> Basic Prerequisites</h2>
-  
-- Install Oracle VirtualBox Download and install VirtualBox from VirtualBox's official site.
-- Download Linux ISO Download the ISO file of your preferred Linux distribution from its official website.
-- Create a New Virtual Machine Open VirtualBox, click "New", and follow the wizard to name your VM, select Linux as the type, allocate memory (2 GB recommended), and create a virtual hard disk (20 GB or more).
-- Configure the Virtual Machine Go to VM "Settings": Adjust system settings, attach the Linux ISO under "Storage", and configure the network settings.
-- Install Linux and Complete Setup Start the VM, boot from the ISO, follow the installation steps for the Linux distribution, remove the ISO, and restart the VM.
-- Optional: Install VirtualBox Guest Additions for enhanced performance.
+# AWS Identity and Access Management (IAM)
+<h2> AWS CLOUD</h2>
 
   ![Screen Shot 2023-10-25 at 4 38 51 PM](https://github.com/Courela23/aws-user-groups/assets/136120929/72bdc180-e2eb-4cb1-b260-64eb7779d305) </h1>
 
